@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <title>Score keeper</title>
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <div class="container">
+          <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <h1 class="title is-1">Series game <span id="player1Series">0</span> to <span id="player2Series">0</span></h1>
+              <div class="card">
+                  <figure class="image">
+                      <img src="https://images.unsplash.com/photo-1611762348135-5b09d2f0390d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" class="src">
+                  </figure>
+                <header class="card-header">
+                  <p class="card-header-title is-size-5">Ping Pong Score Keeper</p>
+                </header>
+                <div class="card-content">
+                  <div class="content">
+                    <h2 class="is-size-2"><span id="player1Score" >0</span> to <span id="player2Score" >0</span></h2>
+                    <p class="is-size-4">
+                        Use the button below to keep score
+                    </p>
+                    <div class="columns m-2">
+                        <label for="totalGame" class="is-size-3 ">Total Games: </label>
+                        <div class="select">
+                            <select class="is-focused  m-1 is-size-5" id = "totalGame">
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="7">7</option>
+                                <option value="9">9</option>
+                            </select>
+                          </div>
+                    </div>
+                    <div class="columns m-2">
+                        <label for="playTo" class="is-size-3">Each Game Playing to: </label>
+                        <div class="select is-rounded is-size-5">
+                            <select name="playTo"  class="m-2" id="playTo">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>                     
+                              </select>
+                        </div>
+                    </div>
+
+                    </div>
+                  </div>
+                </div>
+                <footer class="card-footer">
+                <button class="card-footer-item button is-info is-large" id="player1Btn">player 1</button>
+                <button class="card-footer-item button is-danger is-large" id="player2Btn">player 2</button>
+                <button class="card-footer-item button is-success is-large" id="nextBtn">next</button>
+                <button class="card-footer-item button is-warning is-large" id="resetBtn">reset</button>
+                </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
